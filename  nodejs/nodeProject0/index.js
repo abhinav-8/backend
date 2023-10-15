@@ -12,7 +12,7 @@ require("dotenv").config();
  */
 
 const bot = new Telegraf(process.env.TELEGRAM_API_KEY);
-
+console.log(process.env.TELEGRAM_API_KEY)
 bot.start((ctx) => ctx.reply("Welcome to shady lyrics stan"));
 
 bot.command("whomadethis", (ctx) => ctx.reply("Abhinav"));
